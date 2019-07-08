@@ -1,18 +1,24 @@
 let person = {
   name: "Nino",
-  age:18,
- 
+  age:18
 };
-let count=0;
+
 function test (user){
+  let count=0;
+  if(typeof(person)!=='object'){
+    alert("This in not an object")
+  }
+  else{
+  
     for(key in user)
     {
         count++;
     }
     if(count===0){
-    console.log("obieqti araa")
+    alert("Object is empty")
     }
-    else console.log(count)
+    else alert(count)
     }
-
+  
+  }
     test(person)
